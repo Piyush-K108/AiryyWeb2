@@ -14,6 +14,7 @@ const Mobar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setMobileMenu(false)
     }
   };
   const whatsappNumber = "9826977757";
@@ -92,7 +93,7 @@ const Mobar = () => {
 
       {MobileMenu ? (
         <div
-          className="flex bg-black absolute  z-[10000] px-5 w-screen  h-[100vh] py-4 "
+          className="flex bg-black absolute  z-[10000] px-5 w-screen   h-[100vh] py-4 "
           id="mobile-menu"
         >
           <div className=" flex w-full flex-col">
@@ -104,31 +105,31 @@ const Mobar = () => {
             </a>
             <a
               className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
-              onClick={() => scrollToSection("About")}
+              onClick={() => scrollToSection("MoAbout")}
             >
               About
             </a>
             <a
               className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
-              onClick={() => scrollToSection("Contact")}
+              onClick={() => scrollToSection("MoServices")}
             >
               Services
             </a>
             <a
               className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
-              onClick={() => scrollToSection("Bikes")}
+              onClick={() => scrollToSection("MoBikes")}
             >
               Benefits
             </a>
             <a
               className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
-              onClick={() => scrollToSection("Testimonials")}
+              onClick={() => scrollToSection("MoTestimonials")}
             >
               Testimonials
             </a>
             <a
               className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
-              onClick={() => scrollToSection("Contact")}
+              onClick={() => scrollToSection("MoContact")}
             >
               Contact
             </a>

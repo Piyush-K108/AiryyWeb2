@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import { FaUserFriends } from "react-icons/fa";
 import pin from "../assets/Pin.png";
-import Img1 from "../assets/bikeImg5.png";
-import Img2 from "../assets/bikeImg4.png";
-import Img3 from "../assets/bikeImg3.png";
-import Img4 from "../assets/bikeImg2.png";
-import Img5 from "../assets/bikeImg1.png";
+import Img1 from "../assets/BikeImg5.png";
+import Img2 from "../assets/BikeImg4.png";
+import Img3 from "../assets/BikeImg3.png";
+import Img4 from "../assets/BikeImg2.png";
+import Img5 from "../assets/BikeImg1.png";
 import earth from "../assets/earth.png";
 
 const Bikes = () => {
@@ -51,8 +51,8 @@ const Bikes = () => {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center snap-center flex-col bg-gradient-to-t from-black via-yellow-400 to-black rounded-3xl">
-      <div className="text-center w-screen text-white font-poppins text-[30px] xs:text-[22px] font-bold rounded-2xl py-2 px-10 mt-10 xs:mt-24">
+    <div className="h-screen flex items-center justify-center  flex-col bg-gradient-to-t from-black via-yellow-400 to-black rounded-3xl">
+      <div className="text-center w-screen text-white font-poppins text-[30px] xs:text-[20px] font-bold rounded-2xl py-2 px-10 ">
         BENEFITS OF RIDING WITH US
       </div>
 

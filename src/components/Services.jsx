@@ -1,115 +1,83 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import First from "../assets/24seven.svg"
-import Secound from "../assets/accessible.svg"
-import Third from "../assets/selfie.svg"
-import Forth from "../assets/reliability.svg"
+import First from "../assets/24seven.svg";
+import Second from "../assets/accessible.svg";
+import Third from "../assets/selfie.svg";
+import Fourth from "../assets/reliability.svg";
+
 const Services = () => {
   const whatsappNumber = "9826977757";
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
+
   const handleRentNowClick = () => {
     const whatsappLink = `https://wa.me/${whatsappNumber}`;
     window.location.href = whatsappLink;
   };
+
   return (
-    <>
-      {/* <Fade bottom> */}
-      <div
-        ref={ref}
-        id="Services"
-        className="Services  snap-center xs:snap-end   z-[10] mt-24 ss:mt-32 h-screen  relative  w-full"
-      >
-        {/* Parent container with opacity */}
+    <div
+      ref={ref}
+      id="Services"
+      className="Services z-[10] h-screen w-screen px-2 justify-center items-center relative"
+    >
+      <div className="w-screen h-[1050px] xs:-left-1 bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-3xl flex items-center justify-right -z-10 -top-10 absolute"></div>
 
-        {/* Heading outside the parent container with opacity */}
-        <h1 className=" dark:text-white   text-center font-poppins xs:text-[25px]  ss:text-[28px] text-[35px] font-bold mb-4 xs:pt-20 md:mb-0 md:col-span-3">
-          WHY CHOOSE AiRYY RIDES
-        </h1>
+      <h1 className="dark:text-white text-center font-poppins xs:text-[25px] mb-10 ss:text-[28px] text-[35px] font-bold md:col-span-3">
+        WHY CHOOSE AiRYY RIDES
+      </h1>
 
-        <div className=" lg:flex lg:flex-row xs:my-6 xs:mx-2 ss:my-6 ss:mx-auto ss:align-middle ss:w-screen  md:ml-20 lg:ml-0 xs:grid xs:grid-cols-2 xs:gap-0 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-10    md:gap-10 items-center justify-center mt-16 overflow-hidden xs:w-screen">
-          {/* Box 1 */}
-          <div className="group  xs:w-[180px] ss:w-[220px] xs:h-[250px] ss:h-[300px] w-[250px] h-[327px] flex-col justify-center items-center  inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-[#CFB735] rounded-[30px] transition-all duration-500">
-            
-            {/* icon */}
-            <img className="ss:hidden xs:hidden" src={First} alt="First" />
-            
-
-            <div className="text-neutral-700 group-hover:text-black text-[20px] xs:text-[14px] my-5 font-bold font-poppins">
-              24/7 Service
-            </div>
-            <div className="flex-col justify-center items-center gap-[35px] flex ">
-              <div className="xs:w-[220px] ss:w-[200px] w-[262px] h-[73px] group-hover:text-white text-black text-base font-normal font-poppins px-6 xs:px-10  leading-5 xs:text-[12px]  ss:text-justify xs:text-center text-justify">
-                Available 24/7, we ensure round-the-clock service for your
-                adventures, enabling day or night exploration at
-                your convenience.
-              </div>
-             
-              
-            </div>
-          </div>
-
-          {/* Box 2 */}
-          <div className="group  xs:w-[180px] ss:w-[220px] xs:h-[250px] ss:h-[300px] w-[250px] h-[327px] flex-col justify-center items-center  inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-[#CFB735] rounded-[30px] transition-all duration-500">
-          {/* icon */}
-          <img className="ss:hidden xs:hidden" src={Secound} alt="First" />
-            <div className="text-neutral-700 group-hover:text-black text-[20px]  my-5  xs:text-[14px]  font-bold font-poppins">
-              Budget-Friendly
-            </div>
-            <div className="flex-col justify-center items-center gap-[35px] flex">
-              <div className="xs:w-[220px] ss:w-[200px] w-[262px] h-[73px] group-hover:text-white text-black text-base font-normal font-poppins px-6 xs:px-10  leading-5 xs:text-[12px]  ss:text-justify xs:text-center text-justify">
-                Affordable urban commuting choices provide an exciting ride,
-                letting you enjoy the thrill without financial strain on your
-                wallet.
-              </div>
-              
-            </div>
-          </div>
-
-          {/* Box 3 */}
-          <div className="group  snap-center xs:snap-start snap-mandatory xs:w-[180px] ss:w-[220px] xs:mt-4 xs:h ss:mt-30xs:h-[250px] w-[250px] h-[327px] flex-col justify-center items-center  inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-[#CFB735] rounded-[30px] transition-all duration-500">
-         {/* Icon */}
-         <img className="ss:hidden xs:hidden" src={Third} alt="First" />
-            <div className="text-neutral-700 group-hover:text-black text-[20px] xs:text-[14px] my-5  font-bold font-poppins">
-              Quality and Safety
-            </div>
-            <div className="flex-col justify-center items-center gap-[35px] flex">
-              <div className="xs:w-[220px] ss:w-[200px] w-[262px] h-[73px] group-hover:text-white text-black text-base font-normal font-poppins px-6 xs:px-10  leading-5 xs:text-[12px]  ss:text-justify xs:text-center text-justify">
-                Ensuring safety, our bikes receive regular maintenance for a
-                secure and hassle-free riding experience that prioritizes ease.
-              </div>
-              
-            </div>
-          </div>
-
-          {/* Box 4 */}
-          <div className="group  snap-center xs:snap-start snap-mandatory xs:w-[180px] ss:w-[220px] xs:mt-4 xs:h ss:mt-30xs:h-[250px] w-[250px] h-[327px] flex-col justify-center items-center  inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-[#CFB735] rounded-[30px] transition-all duration-500">
-        
-            {/* icon */}
-            <img className="ss:hidden xs:hidden" src={Forth} alt="First" />
-
-            <div className="text-neutral-700 group-hover:text-black text-[20px] my-5  font-bold font-poppins xs:text-[14px]">
-              Easy Booking
-            </div>
-            <div className="flex-col justify-center items-center gap-[35px] flex">
-              <div className="xs:w-[220px] ss:w-[200px] w-[262px] h-[73px] group-hover:text-white text-black text-base font-normal font-poppins px-6 xs:px-10  leading-5 xs:text-[12px]  ss:text-justify xs:text-center text-justify">
-                Seamless online/ offline booking, offering hassle-free
-                experiences with flexible rental options for your
-                convenience and ease.
-              </div>
-              
-            </div>
-          </div>
-        </div>
+      <div className="xs:grid xs:grid-cols-2 xs:gap-y-10 xs:mr-2 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-10">
+        {serviceData.map((service, index) => (
+          <Box key={index} {...service} />
+        ))}
       </div>
-
-      <div className="w-full -z-9 h-[950px] relative bg-gradient-to-b  from-yellow-400 via-transparent to-transparent rounded-3xl flex items-center justify-right xs:-top-[820px] -top-[720px] ">
-        {/* This container has opacity, and the heading is outside it */}
-      </div>
-
-      {/* </Fade> */}
-    </>
+    </div>
   );
 };
 
 export default Services;
+
+const Box = ({ title, para, icon }) => {
+  return (
+    <div className="flex justify-center items-center">
+      <div className="group xs:w-[160px] ss:w-[220px] xs:h-[220px] ss:h-[300px] w-[250px] h-[327px] flex-col  justify-center items-center inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-[#CFB735] rounded-[30px] transition-all duration-500">
+        {/* icon */}
+        <img className="ss:hidden xs:hidden" src={icon} alt={title} />
+
+        <div className="text-neutral-700 group-hover:text-black text-[20px] xs:text-[14px] mb-5 -mt-10 font-bold font-poppins">
+          {title}
+        </div>
+
+        <div className="flex-col justify-center items-center gap-[35px] flex">
+          <div className="xs:w-[220px] ss:w-[200px] w-[262px] h-[73px] group-hover:text-white text-black text-base font-normal font-poppins px-6 xs:px-10 leading-5 xs:text-[12px] ss:text-justify xs:text-center text-justify">
+            {para}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const serviceData = [
+  {
+    title: "24/7 Service",
+    para: "Available 24/7, we ensure round-the-clock service for your adventures, enabling day or night exploration at your convenience.",
+    icon: First,
+  },
+  {
+    title: "Budget-Friendly",
+    para: "Affordable urban commuting choices provide an exciting ride, letting you enjoy the thrill without financial strain on your wallet.",
+    icon: Second,
+  },
+  {
+    title: "Quality and Safety",
+    para: "Ensuring safety, our bikes receive regular maintenance for a secure and hassle-free riding experience that prioritizes ease.",
+    icon: Third,
+  },
+  {
+    title: "Easy Booking",
+    para: "Seamless online/offline booking, offering hassle-free experiences with flexible rental options for your convenience and ease.",
+    icon: Fourth,
+  },
+];

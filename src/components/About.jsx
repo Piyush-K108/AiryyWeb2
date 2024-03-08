@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 const About = () => {
   return (
     <>
-      <div className="relative xs:hidden ss:hidden w-screen p-10 justify-between h-[102vh] flex flex-row items-center">
+      <div id="About" className="relative xs:hidden ss:hidden w-screen p-10 justify-between h-[102vh] flex flex-row items-center">
         {/* Background */}
 
         <div className="absolute  left-0 top-0 w-[60%] h-[870px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] opacity-60 bg-cover bg-50%_50% bg-blend-normal bg-no-repeat rounded-[50%]" />
@@ -58,8 +58,8 @@ const About = () => {
           />
           <Fade left>
 
-          <div className="w-[350px] flex-1 justify-center  xs:w-[324.63px] ss:w-[404.63px] h-[311px] left-[26px] top-[320px] absolute text-justify text-white text-[12px] font-normal font-['Inter'] leading-[23px]">
-          <div className="w-[205px]  text-white text-[34px] font-semibold font-['Inter'] mb-4 leading-none">ABOUT US</div>
+          <div className=" justify-center  w-screen h-[311px] px-5 text-justify text-white text-[12px] font-normal font-['Inter'] leading-[23px]">
+          <div className="  text-white text-[34px] font-semibold font-['Inter'] mb-4 leading-none">ABOUT US</div>
           <p>
 
             We go beyond just providing bike,
