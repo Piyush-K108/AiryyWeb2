@@ -290,7 +290,7 @@ const Testimonials = () => {
         {/* Colour */}
 
         <svg
-          className="absolute  -top-20 -left-40 xs:w-[530px] "
+          className="absolute  -top-24 -left-20 xs:w-[530px] "
           width="832"
           height="500"
           viewBox="0 0 1422 832"
@@ -304,7 +304,7 @@ const Testimonials = () => {
           <defs>
             <linearGradient
               id="paint0_linear_65_327"
-              x1="600.53"
+              x1="220.53"
               y1="-34.895"
               x2="1200.94"
               y2="548.402"

@@ -48,7 +48,7 @@ const App = () => {
         <div id="MoBikes" className="">
           <Bikes />
         </div>
-        <div id="MoTestimonials" className="mt-20">
+        <div id="MoTestimonials" className="mt-20 -mb-8">
           <Testimonials />
         </div>
         <div id="MoContact" className="mt-0">
