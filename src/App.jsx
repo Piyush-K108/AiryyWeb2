@@ -18,16 +18,16 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 const App = () => {
   return (
     <div className="bg-black  ">
-    {/* Big */}
-      <div className=" flex-col hidden bg-black lg:flex">
-        <div  className="-mt-4  ">
+      {/* Big */}
+      <div className="flex-col hidden bg-black lg:flex">
+        <div className="-mt-4  ">
           <Navbar />
         </div>
         <div className="">
           <Hero />
         </div>
         <div className="mt-20">
-          <About/>
+          <About />
         </div>
       </div>
 
@@ -36,20 +36,20 @@ const App = () => {
         <div id="Mobar" className="-mt-4 ">
           <Mobar />
         </div>
-        <div  className="">
-          <MobHero/>
+        <div className="">
+          <MobHero />
         </div>
         <div id="MoAbout" className="mt-2">
-          <About/>
+          <About />
         </div>
         <div id="MoServices" className="mt-20">
           <Services />
         </div>
         <div id="MoBikes" className="">
-          <Bikes/>
+          <Bikes />
         </div>
         <div id="MoTestimonials" className="mt-20">
-          <Testimonials/>
+          <Testimonials />
         </div>
         <div id="MoContact" className="mt-0">
           <Contact />

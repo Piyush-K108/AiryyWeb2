@@ -30,22 +30,22 @@ const Navbar = () => {
   return (
     <div className="w-screen p-10 flex  flex-row justify-between ">
       {/* Logo and Menu Item */}
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-row items-center gap-10">
         <a
-          className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 "
+          className="cursor-pointer  outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 "
           aria-label="Resend"
           onClick={() => scrollToSection("Hero")}
         >
           <img
             className="bg-blend-color bg-no-repeat"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
             src={Logo}
             alt=""
           />
         </a>
 
-        <div className="pt-6">
+        <div className="pt-0">
           <ul className="flex items-center gap-4">
             <li>
               <a
