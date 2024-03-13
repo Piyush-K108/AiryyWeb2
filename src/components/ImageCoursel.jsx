@@ -44,7 +44,7 @@ const ImageCarousel = () => {
   return (
     <div className={`flex flex-row   border-white items-center justify-evenly`}>
       
-      <div className="xs:w-[28rem] xs:h-[28rem] ss:w-[30rem] ss:h-[30rem]  sm:w-[815px] sm:h-[285px]  lg:w-[615px] lg:h-[485px]   z-10" >
+      <div className="xs:w-[380px] xs:h-[380px] ss:w-[30rem] ss:h-[30rem]  sm:w-[815px] sm:h-[285px]  lg:w-[615px] lg:h-[485px]   z-10" >
         <Slider ref={sliderRef} {...settings}>
           {sliderImages.map((image, index) => (
 

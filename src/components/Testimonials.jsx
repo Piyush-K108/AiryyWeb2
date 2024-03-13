@@ -146,12 +146,12 @@ const Testimonials = () => {
         {/* text */}
 
         <Fade left>
-          <div className=" z-10 flex flex-col w-screen items-center justify-center">
-            <span className="text-[32px] font-poppins mr-2 ">
+          <div className="z-10 xs:p-8 flex flex-col w-screen items-center justify-center">
+            <span className="text-[02px] xs:text-[24px]  font-poppins mr-2 ">
               WHAT OUR RIDERS SAY!
             </span>
             <div className="sm:text-5xl lg:text-2xl  ">
-              <div className="mt-8 xs:mt-2  sm:text-[25px] xl:text-[24px]  font-poppins  leading-9  text-center mr-2">
+              <div className="mt-8  xs:mt-2 xs:w-[70%] xs:text-[14px] xs:leading-8 xs:text-justify xs:m-10  sm:text-[25px] xl:text-[24px]  font-poppins  leading-9  text-center mr-2">
                 Don't just take our word for it hear from our satisfied riders
                 who have experienced the joy of AiRYY Rides.
               </div>
@@ -290,7 +290,7 @@ const Testimonials = () => {
         {/* Colour */}
 
         <svg
-          className="absolute  -top-20 -left-40"
+          className="absolute  -top-20 -left-40 xs:w-[530px] "
           width="832"
           height="500"
           viewBox="0 0 1422 832"
@@ -304,10 +304,10 @@ const Testimonials = () => {
           <defs>
             <linearGradient
               id="paint0_linear_65_327"
-              x1="1164.53"
-              y1="-234.895"
-              x2="1444.94"
-              y2="848.402"
+              x1="600.53"
+              y1="-34.895"
+              x2="1200.94"
+              y2="548.402"
               gradientUnits="userSpaceOnUse"
             >
               <stop stop-color="#FFD600" />

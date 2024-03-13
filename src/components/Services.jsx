@@ -19,7 +19,7 @@ const Services = () => {
     <div
       ref={ref}
       id="Services"
-      className="Services z-[10] h-screen w-screen px-2 justify-center items-center relative"
+      className="Services z-[10] h-screen w-screen px-1 justify-center items-center relative"
     >
       <div className="w-screen h-[1050px] xs:-left-1 bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-3xl flex items-center justify-right -z-10 -top-10 absolute"></div>
 
@@ -27,7 +27,7 @@ const Services = () => {
         WHY CHOOSE AiRYY RIDES
       </h1>
 
-      <div className="xs:grid xs:grid-cols-2 xs:gap-y-10 xs:mr-2 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-10">
+      <div className="xxl:grid xxl:grid-cols-2 xxl:gap-8  xs:grid xs:grid-cols-2 xs:gap-y-10 xs:mr-2 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-10">
         {serviceData.map((service, index) => (
           <Box key={index} {...service} />
         ))}

@@ -20,7 +20,7 @@ const MobHero = () => {
   return (
     <div className="h-[80vh] justify-center w-screen flex  flex-col px-5">
       {/* Text */}
-      <div className="mb-10 z-10 -mt-24 ">
+      <div className="mb-10 z-10 xs:-mt-52 xs:mb-[100px] -mt-24 ">
         <motion.span className="text-yellow-500 xs:text-5xl ss:text-5xl  sm:text-6xl   font-medium font-poppins uppercase  tracking-[2.88px]">
           A
         </motion.span>
@@ -106,12 +106,12 @@ const MobHero = () => {
 
       {/* Image */}
       <div className="relative">
-        <div className="-mb-80  rounded-[743.5px/595.5px] overflow-hidden -mr-40 ">
-        <ImageCarousel />
+        <div className="-mb-80  rounded-[743.5px/595.5px] overflow-hidden xs:-mr-30 -mr-40 ">
+          <ImageCarousel />
         </div>
-         <div className=" absolute    xs:-left-[35vw] xs:-top-[10vh] ss:-left-[20vw] ss:-top-[14vh]  xl:-top-[28ch]  z-1">
+        <div className=" absolute    xs:-left-[35vw] xs:-top-[10vh] ss:-left-[20vw] ss:-top-[14vh]  xl:-top-[28ch]  z-1">
           <div
-            className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
+            className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px] xs:w-[450px] xs:rounded-[1143.5px/995.5px] xs:h-[350px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
             style={{
               position: "relative",
             }}
