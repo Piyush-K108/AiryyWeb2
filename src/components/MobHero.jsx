@@ -109,9 +109,9 @@ const MobHero = () => {
         <div className="-mb-80  rounded-[743.5px/595.5px] overflow-hidden xs:-mr-30 -mr-40 ">
           <ImageCarousel />
         </div>
-        <div className=" absolute    xs:-left-[35vw] xs:-top-[10vh] ss:-left-[20vw] ss:-top-[14vh]  xl:-top-[28ch]  z-1">
+        <div className="absolute sm:-left-[0vw] sm:-top-[14vh]   xs:-left-[35vw] xs:-top-[10vh] ss:-left-[20vw] ss:-top-[14vh]  xl:-top-[28ch]  z-1">
           <div
-            className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
+            className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px] sm:h-[90rem]   bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
             style={{
               position: "relative",
             }}

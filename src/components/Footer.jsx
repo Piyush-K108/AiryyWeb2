@@ -14,7 +14,7 @@ const currentYear = new Date().getFullYear();
 
 function Footer() {
   return (
-    <div id="Footer" className="flex flex-col w-screen px-5">
+    <div id="Footer" className="flex flex-col  w-screen px-5">
       <div className=" z-[100]">
         <a
           className=" cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"

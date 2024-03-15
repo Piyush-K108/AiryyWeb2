@@ -141,20 +141,20 @@ const Testimonials = () => {
       />
       <div
         id="Testimonials"
-        className="h-screen flex xs:flex-col xs:gap-14 ss:flex-col sm:flex-col relative  xl:flex-row  items-start xl:justify-between  mt-14 "
+        className=" flex w-screen  xs:flex-col xs:gap-14 ss:flex-col sm:flex-col relative  xl:flex-row  items-start xl:justify-between  mt-14 "
       >
         {/* text */}
 
         <Fade left>
-          <div className="z-10 xs:p-8 flex flex-col w-screen items-center justify-center">
-            <span className="text-[02px] xs:text-[24px]  font-poppins mr-2 ">
+          <div className="z-10 xs:px-8 xs:mt-10   flex flex-col w-screen items-center justify-center">
+            <span className="text-[20px] sm:text-[30px] ss:text-[24px] xs:text-[24px]  font-poppins  ">
               WHAT OUR RIDERS SAY!
             </span>
-            <div className="sm:text-5xl lg:text-2xl  ">
-              <div className="mt-8  xs:mt-2 xs:w-[70%] xs:text-[14px] xs:leading-8 xs:text-justify xs:m-10  sm:text-[25px] xl:text-[24px]  font-poppins  leading-9  text-center mr-2">
+            <div className="sm:text-5xl lg:text-2xl">
+              <p className="mt-8 sm:px-20 ss:text-justify ss:px-16 ss:leading-7 xs:mt-2 xs:mr-0 ss:text-[14px] xs:text-[14px] xs:leading-7 xs:text-justify   sm:text-[18px] xl:text-[24px]  font-poppins  leading-9  text-center mr-2">
                 Don't just take our word for it hear from our satisfied riders
                 who have experienced the joy of AiRYY Rides.
-              </div>
+              </p>
             </div>
           </div>
         </Fade>
@@ -162,7 +162,7 @@ const Testimonials = () => {
         {/* Card */}
 
         <Fade right>
-          <div className=" z-10 flex justify-center items-center w-screen mx-auto pt-10 x-10 xs:h-[14rem] xs:w-80 sm:hidden  bg-white rounded-[4rem] xs:rounded-[2rem]">
+          <div className=" z-10 flex justify-center sm:mb-20 ss:mb-20 items-center w-screen mx-auto sm:pt-24 ss:pt-24 pt-10 x-10 xs:h-[14rem] sm:w-[500px] sm:h-[200px]  ss:w-[400px] ss:h-[200px] xs:w-80 sm:mt-12 ss:mt-12 bg-white rounded-[4rem] xs:rounded-[2rem]">
             <div id="keen-slider" ref={sliderRef} className="keen-slider">
               {/* Your card content goes here */}
               {monials.map((monial, index) => (
@@ -174,7 +174,7 @@ const Testimonials = () => {
               ))}
             </div>
           </div>
-          <div className="xs:hidden z-10  bg-white rounded-[4rem] xs:rounded-[2rem]">
+          <div className="xs:hidden sm:hidden z-10  bg-red-800 rounded-[4rem] xs:rounded-[2rem]">
             <div id="keen-slider" ref={sliderRef} className="keen-slider">
               {/* Your card content goes here */}
               {monials.map((monial, index) => (
@@ -189,7 +189,7 @@ const Testimonials = () => {
         </Fade>
 
         {/* Arrow */}
-        <div className="hidden  z-10  lg:mt-8 lg:flex justify-center lg:gap-4">
+        <div className="hidden  z-10   lg:mt-8 lg:flex justify-center lg:gap-4">
           <button
             aria-label="Previous slide"
             id="keen-slider-previous-desktop"
@@ -250,7 +250,7 @@ const Testimonials = () => {
             className="rounded-full flex border-2 border-[#FFD600] h-10 w-10  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
           >
             <svg
-              className="h-3 w-3 flex-1 justify-center mt-3"
+              className="h-3 w-3 flex-1 justify-center mt-3 "
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -290,7 +290,7 @@ const Testimonials = () => {
         {/* Colour */}
 
         <svg
-          className="absolute  -top-24 -left-20 xs:w-[530px] "
+          className="absolute  -top-24 -left-20 ss:w-[530px] xs:w-[530px] "
           width="832"
           height="500"
           viewBox="0 0 1422 832"
