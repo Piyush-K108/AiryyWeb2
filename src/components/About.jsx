@@ -4,7 +4,10 @@ import Fade from "react-reveal/Fade";
 const About = () => {
   return (
     <>
-      <div id="About" className="relative xs:hidden ss:hidden w-screen p-10 justify-between h-[102vh] flex flex-row items-center">
+      <div
+        id="About"
+        className="relative xs:hidden ss:hidden sm:hidden  w-screen p-10 justify-between h-[102vh] flex flex-row items-center"
+      >
         {/* Background */}
 
         <div className="absolute  left-0 top-0 w-[60%] h-[870px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] opacity-60 bg-cover bg-50%_50% bg-blend-normal bg-no-repeat rounded-[50%]" />
@@ -14,10 +17,10 @@ const About = () => {
         <div className="relative w-[48%] z-10">
           <Fade left>
             <div className="mt-4 text-justify ml-40">
-              <div className="text-3xl mb-2 font-poppins font-semibold leading-[86px] dark:text-gray-300">
+              <div className="text-3xl mb-2 xs:font-poppins ss:font-poppins sm:font-poppins font-poppins font-semibold leading-[86px] dark:text-gray-300">
                 ABOUT US
               </div>
-              <p className="leading-[30px] w-[28rem] text-xl font-light text-gray-100">
+              <p className="font-poppins leading-[30px] w-[28rem] text-xl font-light text-gray-100">
                 We go beyond just providing bikes, we're dedicated to creating
                 unforgettable experiences. Our commitment to sustainable urban
                 mobility fuels our mission to offer a diverse fleet of
@@ -47,32 +50,35 @@ const About = () => {
 
       <div
         id="About"
-        className="overflow-hidden  mt-10  sm:hidden  snap-start snap-mandatory  relative  w-full font-['Inter'] items-start "
+        className="overflow-hidden sm:top-60  mt-10   snap-start snap-mandatory  relative  w-full  items-start "
       >
-        <div className="w-[360px] h-[640px] relative ">
-        <div className="w-[560px] h-[340px]  bg-gradient-to-b from-yellow-400 to-black" />
-          <img
-            className="w-[360px] h-[203px] xs:left-[20px] ss:left-[34px] top-[90px] absolute"
-            src="https://file.rendit.io/n/rH5LwF78dqiwZ10YKfVp.png"
-            alt="Vecteezypeopleworkingandmeetingillustration"
-          />
+        <div className="w-sreen  h-[640px]">
+          <div className="w-screen h-[340px]  bg-gradient-to-b from-yellow-400 to-black" />
+          <Fade right>
+            <img
+              className="w-[360px] h-[203px] xs:left-[20px] ss:left-[34px] sm:left-[44px] top-[90px] absolute"
+              src="https://file.rendit.io/n/rH5LwF78dqiwZ10YKfVp.png"
+              alt="Vecteezypeopleworkingandmeetingillustration"
+            />
+          </Fade>
+
           <Fade left>
-
-          <div className=" justify-center  w-screen h-[311px] px-5 text-justify text-white text-[12px] font-normal font-['Inter'] leading-[23px]">
-          <div className="  text-white text-[34px] font-semibold font-['Inter'] mb-4 leading-none">ABOUT US</div>
-          <p>
-
-            We go beyond just providing bike,
-            we're dedicated to creating unforgettable experiences. Our commitment
-            to sustainable urban mobility fuels our mission tooffer a diverse
-            fleet of meticulously maintained bikes, ensuring that  AiRYY
-            ride is not only smooth and safe but also packed with adventure.
-            Visit us at Bhawarkua, Indore, and embark on a journey with AiRYY
-            that transforms your commute into a memorable adventure. Get ready
-            to explore the city with ease, style, and a touch of excitement.
-          </p>
-            <br />
-          </div>
+            <div className=" justify-center  w-screen h-[311px] px-5 text-justify text-white text-[12px]   leading-[23px]">
+              <div className="font-poppins  text-white text-[34px] font-semibold  mb-4 leading-none">
+                ABOUT US
+              </div>
+              <p className="font-poppins">
+                We go beyond just providing bike, we're dedicated to creating
+                unforgettable experiences. Our commitment to sustainable urban
+                mobility fuels our mission tooffer a diverse fleet of
+                meticulously maintained bikes, ensuring that AiRYY ride is not
+                only smooth and safe but also packed with adventure. Visit us at
+                Bhawarkua, Indore, and embark on a journey with AiRYY that
+                transforms your commute into a memorable adventure. Get ready to
+                explore the city with ease, style, and a touch of excitement.
+              </p>
+              <br />
+            </div>
           </Fade>
         </div>
       </div>

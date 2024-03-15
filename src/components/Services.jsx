@@ -19,7 +19,7 @@ const Services = () => {
     <div
       ref={ref}
       id="Services"
-      className="Services z-[10] h-screen w-screen px-1 justify-center items-center relative"
+      className="Services   z-[10] h-screen w-screen px-1 justify-center items-center relative"
     >
       <div className="w-screen h-[1050px] xs:-left-1 bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-3xl flex items-center justify-right -z-10 -top-10 absolute"></div>
 
@@ -27,7 +27,7 @@ const Services = () => {
         WHY CHOOSE AiRYY RIDES
       </h1>
 
-      <div className="xxl:grid xxl:grid-cols-2 xxl:gap-8  xs:grid xs:grid-cols-2 xs:gap-y-10 xs:mr-2 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-10">
+      <div className="xxl:grid xxl:grid-cols-2 xxl:gap-8  xs:grid xs:grid-cols-2 xs:gap-y-10 xs:mr-2 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-6">
         {serviceData.map((service, index) => (
           <Box key={index} {...service} />
         ))}
@@ -40,19 +40,23 @@ export default Services;
 
 const Box = ({ title, para, icon }) => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="group xs:w-[160px] ss:w-[220px] xs:h-[220px] ss:h-[300px] w-[250px] h-[327px] flex-col  justify-center items-center inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-[#CFB735] rounded-[30px] transition-all duration-500">
+    <div className="flex   justify-center  items-center">
+      <div className="group xs:w-[160px] ss:w-[200px] xs:h-[220px] ss:h-[250px] w-[250px] h-[327px] flex-col gap-2 justify-center items-center inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-[#CFB735] rounded-[30px] transition-all duration-500">
         {/* icon */}
-        <img className="ss:hidden xs:hidden" src={icon} alt={title} />
+        <img
+          className="xs:h-[40px] ss:h-[40px] ss:w-[40px] xs:w-[40px]"
+          src={icon}
+          alt={title}
+        />
 
-        <div className="text-neutral-700 group-hover:text-black text-[20px] xs:text-[14px] mb-5 -mt-10 font-bold font-poppins">
+        <div className="text-neutral-700 group-hover:text-black text-[20px] xs:text-[14px] ss:text-[14px]   font-bold font-poppins">
           {title}
         </div>
 
-        <div className="flex-col justify-center items-center gap-[35px] flex">
-          <div className="xs:w-[220px] ss:w-[200px] w-[262px] h-[73px] group-hover:text-white text-black text-base font-normal font-poppins px-6 xs:px-10 leading-5 xs:text-[12px] ss:text-justify xs:text-center text-justify">
+        <div className="flex-col justify-center items-center  flex">
+          <p className="xs:w-[220px]  ss:px-10  ss:text-center w-[262px] h-[93px] group-hover:text-white text-black text-base font-normal font-poppins px-6 xs:px-8 leading-5 xs:text-[12px]  xs:text-center text-justify">
             {para}
-          </div>
+          </p>
         </div>
       </div>
     </div>

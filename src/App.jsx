@@ -29,6 +29,9 @@ const App = () => {
         <div className="mt-20">
           <About />
         </div>
+        <div id="MoServices" className="mt-20">
+          <Services />
+        </div>
       </div>
 
       {/* Mobile */}
@@ -42,16 +45,16 @@ const App = () => {
         <div id="MoAbout" className="mt-2">
           <About />
         </div>
-        <div id="MoServices" className="mt-20">
+        <div id="MoServices" className="mt-20 sm:mt-[20rem]">
           <Services />
         </div>
-        <div id="MoBikes" className="">
+        <div id="MoBikes" className="ss:mt-20 sm:mt-[300px]">
           <Bikes />
         </div>
-        <div id="MoTestimonials" className="mt-20 -mb-8">
+        <div id="MoTestimonials" className="mt-20 ss:mt-44">
           <Testimonials />
         </div>
-        <div id="MoContact" className="mt-0">
+        <div id="MoContact" className="mt-20">
           <Contact />
         </div>
         <div id="MoFooter" className="mt-20">

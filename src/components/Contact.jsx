@@ -27,9 +27,9 @@ const Contact = () => {
     <motion.div ref={ref} id="Contact" className="flex flex-col w-screen px-5">
       {/* Text */}
       <div className="flex flex-col justify-center items-center xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white ">
-        <p className=" mb-4">Get in Touch</p>
-        <div className="xs:text-[12px]  xs:flex xs:justify-start xs:items-start text-justify text-xl font-poppins font-medium  dark:text-[#d3d0d0]">
-          <p className="xs:text-center ">
+        <p className="mb-4">Get in Touch</p>
+        <div className="sm:text-[17px] ss:text-[14px] xs:text-[12px]  xs:flex xs:justify-start xs:items-start text-justify text-xl font-poppins font-medium  dark:text-[#d3d0d0]">
+          <p className="xs:text-center sm:px-10 ss:px-10">
             Have questions or need assistance? We are here to help. Contact our
             friendly team at AiRYY Rides for any inquiries, support or
             partnership opportunities.
@@ -38,21 +38,21 @@ const Contact = () => {
         <div className="flex flex-col">
           <div className="flex flex-row gap-2 mt-8">
             <span className="text-[100px] -mt-9 text-yellow-400">.</span>
-            <span className="block font-poppins xs:text-[12px]   sm:text-[18px] dark:text-white font-medium uppercase">
+            <span className="block font-poppins  ss:text-[12px] xs:text-[12px]   sm:text-[12px] dark:text-white font-medium uppercase">
               Click on Map to Reach the Pickup location.
             </span>
           </div>
           {/* Map */}
 
           <iframe
-            className="xs:w-80 sm:hidden h-60 w-full  rounded-[2rem]"
+            className="xs:w-80 sm:w-[500px] h-60 w-full  rounded-[2rem]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.467957738305!2d75.86182427385859!3d22.687931523086643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd038adfe389%3A0x2aa0548bdd308fea!2sAiRYY%20Rides!5e0!3m2!1sen!2sin!4v1704033687769!5m2!1sen!2sin"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <iframe
-            className=" xs:hidden ss:hidden h-72 ml-20 w-full rounded-[2rem]"
+            className=" xs:hidden sm:hidden ss:hidden h-72 ml-20 w-full rounded-[2rem]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.467957738305!2d75.86182427385859!3d22.687931523086643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd038adfe389%3A0x2aa0548bdd308fea!2sAiRYY%20Rides!5e0!3m2!1sen!2sin!4v1704033687769!5m2!1sen!2sin"
             allowfullscreen=""
             loading="lazy"
@@ -116,26 +116,26 @@ const Contact = () => {
           transition={{ delay: 2.5, duration: 1 }}
         >
           <input
-            className="placeholder-black xs:w-[19rem]"
+            className="placeholder-black sm:w-[25rem] ss:w-[20rem] xs:w-[19rem]"
             type="text"
             required
             placeholder="Name"
             name="name"
           />
           <input
-            className="placeholder-black xs:w-[19rem]"
+            className="placeholder-black sm:w-[25rem] ss:w-[20rem] xs:w-[19rem]"
             type="email"
             required
             placeholder="Email"
             name="email"
           />
           <textarea
-            className="placeholder-black h-full w-full xs:w-[19rem] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
+            className="placeholder-black h-full w-full sm:w-[25rem] ss:w-[20rem] xs:w-[19rem] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
             rows={8}
             placeholder="Message"
             name="message"
           />
-          <div className="flex xs:w-72 justify-center items-center">
+          <div className="flex ss:w-72 sm:w-[25rem] xs:w-72 justify-center items-center">
             <span className="bg-gray-900 xs:w-72  w-full py-3 rounded-2xl text-center cursor-pointer uppercase text-yellow-400 font-bold">
               Submit
             </span>

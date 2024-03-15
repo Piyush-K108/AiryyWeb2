@@ -15,7 +15,7 @@ const Bikes = () => {
 
     return (
       <div
-        className="relative flex flex-col items-center justify-center bg-gradient-to-r from-yellow-400 to-yellow-300 border border-black shadow-2xl rounded-2xl xs:w-[150px] xs:h-[180px] w-[251px] h-[209px]"
+        className="relative flex flex-col items-center justify-center bg-gradient-to-r from-yellow-400 to-yellow-300 border border-black shadow-2xl rounded-2xl ss:w-[170px] xs:w-[150px] xs:h-[180px] w-[251px] h-[209px]"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -52,13 +52,13 @@ const Bikes = () => {
 
   return (
     <div className="h-screen flex items-center justify-center  flex-col bg-gradient-to-t from-black via-yellow-400 to-black rounded-3xl">
-      <div className="text-center w-screen text-white font-poppins text-[30px] xs:text-[20px] font-bold rounded-2xl py-2 px-10 ">
+      <div className="text-center w-screen text-white font-poppins text-[30px] ss:text-[25px] xs:text-[20px] font-bold rounded-2xl py-2 px-10 ">
         BENEFITS OF RIDING WITH US
       </div>
 
       <div
         id="Bikes"
-        className="grid xs:grid-cols-2 grid-cols-3 lg:gap-x-20 sm:gap-x-10 xl:gap-x-40 gap-y-20 xs:gap-10 xs:m-[5px] py-8"
+        className="grid ss:grid-cols-2 ss:gap-x-10 xs:grid-cols-2 grid-cols-3 lg:gap-x-20 sm:gap-x-10 xl:gap-x-40 gap-y-20 xs:gap-10 xs:m-[5px] py-8"
       >
         <BikeBox imgSrc={Img1} description="Our Electric Bikes boost a 50 km range, ideal for economical short rides." isHiddenText={false} />
         <BikeBox imgSrc={Img2} description="Both Electric Bikes and Activa are new, serviced, and feature advanced safety for a secure riding experience." isHiddenText={false} />
