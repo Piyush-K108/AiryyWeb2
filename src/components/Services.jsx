@@ -27,7 +27,7 @@ const Services = () => {
         WHY CHOOSE AiRYY RIDES
       </h1>
 
-      <div className="xxl:grid xxl:grid-cols-2 xxl:gap-8  xs:grid xs:grid-cols-2 xs:gap-y-10 xs:mr-2 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-6">
+      <div className="xxl:flex xxl:justify-center xxl:flex-row xxl:m-0 xxl:items-center    xs:grid xs:grid-cols-2 xs:gap-y-10 xs:mr-2 sm:grid sm:grid-cols-2 sm:gap-12 ss:grid ss:grid-cols-2 ss:gap-6">
         {serviceData.map((service, index) => (
           <Box key={index} {...service} />
         ))}
