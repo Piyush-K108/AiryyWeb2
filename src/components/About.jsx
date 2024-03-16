@@ -6,15 +6,15 @@ const About = () => {
     <>
       <div
         id="About"
-        className="relative xs:hidden ss:hidden sm:hidden  w-screen p-10 justify-between h-[102vh] flex flex-row items-center"
+        className="relative xs:hidden ss:hidden sm:hidden lg:flex lg:justify-between  w-screen p-10 justify-between h-[102vh] flex flex-row items-center"
       >
         {/* Background */}
 
         <div className="absolute  left-0 top-0 w-[60%] h-[870px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] opacity-60 bg-cover bg-50%_50% bg-blend-normal bg-no-repeat rounded-[50%]" />
-        <div className="absolute  w-[80%] h-[1017px] bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat left-[48%] flex flex-row justify-end items-start pt-[153px] px-12 rounded-[50%]" />
+        <div className="absolute  w-[80%] lg:h-[800px] h-[1017px] bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat left-[48%] flex flex-row justify-end items-start pt-[153px] px-12 rounded-[50%]" />
 
         {/* Text */}
-        <div className="relative w-[48%] z-10">
+        <div className=" w-[48%] z-10">
           <Fade left>
             <div className="mt-4 text-justify ml-40">
               <div className="text-3xl mb-2 xs:font-poppins ss:font-poppins sm:font-poppins font-poppins font-semibold leading-[86px] dark:text-gray-300">
@@ -50,7 +50,7 @@ const About = () => {
 
       <div
         id="About"
-        className="overflow-hidden sm:top-60  mt-10   snap-start snap-mandatory  relative  w-full  items-start "
+        className="overflow-hidden lg:hidden   sm:top-60  mt-10   snap-start snap-mandatory  relative  w-full  items-start "
       >
         <div className="w-sreen  h-[640px]">
           <div className="w-screen h-[340px]  bg-gradient-to-b from-yellow-400 to-black" />

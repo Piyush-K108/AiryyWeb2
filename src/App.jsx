@@ -11,26 +11,39 @@ import Bikes from "./components/Bikes";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Contact2 from "./components/Contact2";
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 });
 const App = () => {
   return (
-    <div className="bg-black  ">
+    <div className="bg-black">
       {/* Big */}
-      <div className="flex-col hidden bg-black lg:flex">
+      <div className="flex-col hidden bg-black lg:flex xxl:overflow-hidden">
         <div className="-mt-4  ">
           <Navbar />
         </div>
         <div className="">
           <Hero />
         </div>
-        <div className="mt-20">
+        <div className="mt-20 lg:mt-[500px] xxl:mt-[100px]">
           <About />
         </div>
-        <div id="MoServices" className="mt-20">
+        <div className="mt-20">
           <Services />
+        </div>
+        <div className="ss:mt-20 sm:mt-[300px] xxl:mt-[-100px]">
+          <Bikes />
+        </div>
+        <div className="mt-20 ss:mt-44">
+          <Testimonials />
+        </div>
+        <div className="mt-20">
+          <Contact2 />
+        </div>
+        <div className="mt-20">
+          <Footer />
         </div>
       </div>
 
