@@ -26,9 +26,9 @@ const Navbar = () => {
     const phone = `tel:${whatsappNumber}`;
     window.location.href = phone;
   };
-  const [MobileMenu, setMobileMenu] = useState(false);
+
   return (
-    <div className="w-screen p-10 flex  flex-row justify-between ">
+    <div className="w-screen p-12  flex  flex-row justify-between ">
       {/* Logo and Menu Item */}
       <div className="flex flex-row items-center gap-10">
         <a
@@ -97,7 +97,7 @@ const Navbar = () => {
       <div
         tabIndex={0} // Make the div focusable
         onBlur={() => setIsDropDown(false)}
-        className="relative pt-6 z-10"
+        className="relative  z-10"
       >
         <a
           className="outline-none cursor-pointer focus-visible:ring-slate-7 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-4 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200"

@@ -12,6 +12,7 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Contact2 from "./components/Contact2";
+import LapTestimonials from "./components/LapTestimonials";
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -37,7 +38,7 @@ const App = () => {
           <Bikes />
         </div>
         <div className="mt-20 ss:mt-44">
-          <Testimonials />
+          <LapTestimonials />
         </div>
         <div className="mt-20">
           <Contact2 />
