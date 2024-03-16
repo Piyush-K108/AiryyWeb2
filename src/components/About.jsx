@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div
         id="About"
-        className="relative xs:hidden ss:hidden sm:hidden  w-screen p-10 justify-between h-[102vh] flex flex-row items-center"
+        className="relative xs:hidden ss:hidden sm:hidden lg:flex   w-screen p-10 justify-between h-[102vh] flex flex-row items-center"
       >
         {/* Background */}
 
@@ -16,7 +16,7 @@ const About = () => {
         {/* Text */}
         <div className="relative w-[48%] z-10">
           <Fade left>
-            <div className="mt-4 text-justify ml-40">
+            <div className="mt-4 text-justify">
               <div className="text-3xl mb-2 xs:font-poppins ss:font-poppins sm:font-poppins font-poppins font-semibold leading-[86px] dark:text-gray-300">
                 ABOUT US
               </div>
@@ -50,7 +50,7 @@ const About = () => {
 
       <div
         id="About"
-        className="overflow-hidden sm:top-60  mt-10   snap-start snap-mandatory  relative  w-full  items-start "
+        className="overflow-hidden sm:top-60  mt-10 lg:hidden   relative  w-full  items-start "
       >
         <div className="w-sreen  h-[640px]">
           <div className="w-screen h-[340px]  bg-gradient-to-b from-yellow-400 to-black" />

@@ -133,7 +133,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-screen justify-center mb-2 mt-16 flex sm:hidden  text-white">
+      <div className="w-screen justify-center mb-2 mt-16 -ml-3 flex sm:hidden  text-white">
         <p>
           <span className="text-yellow-400">&copy;</span> {currentYear}{" "}
           airyyrides.com
