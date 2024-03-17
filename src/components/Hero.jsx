@@ -29,7 +29,9 @@ const Hero = () => {
             Ride Return Repeat
           </div>
           <div className=" dark:text-white  text-[19px] font-semibold font-poppins ">
-            Your journey, Your vehicle, <br className="hidden xs:block ss:block"/>Experience travel like never before.
+            Your journey, Your vehicle,{" "}
+            <br className="hidden xs:block ss:block" />
+            Experience travel like never before.
           </div>
         </div>
         <div className="cursor-pointer px-4 py-2.5 mt-4 w-32 rounded-[10px] border-2 border-yellow-500 justify-center items-center gap-2 inline-flex">
@@ -43,15 +45,12 @@ const Hero = () => {
         </div>
       </div>
       {/* Images */}
-     <div className="relative">
-      <div className=" rounded-[743.5px/595.5px] overflow-hidden">
-
-      <ImageCarousel/>
-      </div>
-      <div className=" absolute  lg:top-10 lg:-left-[15vw]  xl:-top-[20ch] xl:-left-[10vw]     z-1">
-          <div
-            className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[703.5px/585.5px]"
-          />
+      <div className="relative">
+        <div className=" rounded-[743.5px/595.5px] overflow-hidden">
+          <ImageCarousel />
+        </div>
+        <div className=" absolute  lg:top-10 lg:-left-[15vw]  xl:-top-[20ch] xl:-left-[10vw]     z-1">
+          <div className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[703.5px/585.5px]" />
           <div className=" absolute  z-100 top-0 bottom-0 -left-20  xs:-left-48">
             <svg
               className="absolute -left-20 h-[690px] w-[1450px] "
