@@ -16,6 +16,7 @@ module.exports = {
       lg: "960px",
       xl: "1024px",
       xxl: "1200px",
+      scooter:{min:"512px",max:"600px"},
       img: { min: "1200px", max: "1376px" },
     },
     extend: {
