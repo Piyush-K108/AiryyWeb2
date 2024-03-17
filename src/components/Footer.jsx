@@ -14,9 +14,9 @@ const currentYear = new Date().getFullYear();
 
 function Footer() {
   return (
-    <div id="Footer" className="flex flex-col w-screen px-5">
+    <div id="Footer" className="flex flex-col w-screen px-5 md:px-20 xxl:pr-56 xxl:ml-10">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:w-screen sm:pr-8 sm:mt-10 ">
-        <div className=" z-[100] sm:w-80 sm:mt-6">
+        <div className=" z-[100] sm:w-80 sm:-mt-6 xxl:mt-8">
           <a
             className=" cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"
             onClick={() => scrollToSection("Nav")}
@@ -30,6 +30,11 @@ function Footer() {
           <h2 className="dark:text-gray-300   font-poppins  xs:text-[18px] text-[25px] font-medium">
             Rent it now!
           </h2>
+          <div className="w-[80vw] ss:w-[220px] md:w-[290px] lg:w-[100vw] xs:flex xs:justify-start xs:items-center">
+              <p className="dark:text-gray-300 ss:text-[20px]    font-poppins mt-1 xs:hidden ss:hidden xs:text-[18px] text-[25px]">
+                Explore the city with ease. Rent a bike today!
+              </p>
+            </div>
         </div>
 
         <div className="">
@@ -37,7 +42,7 @@ function Footer() {
             <img
               src={FooterImg}
               alt="Footer Img"
-              className="rounded-2xl -mt-40 sm:-mt-16 ss:ml-10   scooter:ml-20 sm:ml-[10vw] md:ml-[20vw] lg:ml-[30vw] xl:ml-[40vw] xxl:ml-[50vw]"
+              className="rounded-2xl -mt-40 sm:-mt-16 ss:ml-10 xs:ml-16  scooter:ml-20 sm:ml-[10vw] md:-ml-[8vw] lg:-ml-[0vw] xxl:mr-40 "
               height={500}
               width={500}
             />
@@ -47,7 +52,7 @@ function Footer() {
 
 
 
-      <div className="flex flex-col  -mt-20 sm:mt-1">
+      <div className="flex flex-col -mt-10 ss:-mt-20 sm:mt-1">
 
         <div className="flex md:flex-row justify-between">
           <div className="flex flex-col sm:w-[60%]">
@@ -78,7 +83,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="dark:text-white xs:hidden ss:hidden">
+          <div className="dark:text-white xs:hidden ss:hidden ">
             <h1 className="font-bold font-poppins pb-2 mt-10 sm:mt-0 ss:text-[14px] xs:text-[25px] text-[25px]">
               Useful Links
             </h1>
@@ -131,7 +136,7 @@ function Footer() {
           airyyrides.com
         </p>
         {/* Social Links for larger screens */}
-        <div className="flex xs:hidden  ss:hidden dark:text-white mr-10 flex-row gap-4 h-[5rem] ">
+        <div className="flex xs:hidden  ss:hidden dark:text-white pr-10 md:pr-36 xxl:pr-72 flex-row gap-4 h-[5rem] ">
           <a href="https://www.linkedin.com/company/airyy-rides/">
             <CiLinkedin className="cursor-pointer" size={33} />
           </a>
