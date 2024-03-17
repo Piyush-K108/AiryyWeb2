@@ -73,17 +73,18 @@ function Footer() {
           </ul>
         </div>
         <div className="xxl:flex xxl:flex-col xxl:items-center ">
+        {/* used in xxl  */}
           <div className="sm:hidden ss:hidden  xs:hidden xxl:flex xxl:items-center">
             <Zoom right>
               <img
                 src={FooterImg}
                 alt="Footer Img"
-                className="rounded-2xl -mt-40 xxl:h-[200px] xxl:w-[300px] "
+                className="rounded-2xl xxl:-mt-64 xxl:h-[200px] xxl:w-[300px] "
               
               />
             </Zoom>
           </div>
-          <div className="dark:text-white xs:hidden ss:hidden">
+          <div className="dark:text-white xs:hidden ss:hidden xxl:relative xxl:top-[-30px]">
             <h1 className="font-bold font-poppins pb-2 ss:text-[14px] xs:text-[25px] text-[25px]">
               Useful Links
             </h1>
@@ -128,13 +129,13 @@ function Footer() {
       </div>
 
       {/* lower */}
-      <div className="w-screen justify-between flex xs:hidden xxl:flex xxl:h-[3rem] xxl:mb-10 xxl:flex-row xxl:items-center  xxl:justify-between ss:hidden xxl:px-10 px-44 text-white">
+      <div className="w-screen justify-between flex xs:hidden xxl:flex xxl:h-[3rem] xxl:mb-10 xxl:flex-row xxl:items-center  xxl:justify-between ss:hidden xxl:px-0 px-44 text-white">
         <p>
           <span className="text-yellow-400">&copy;</span> {currentYear}{" "}
           airyyrides.com
         </p>
         {/* Social Links for larger screens */}
-        <div className="flex xs:hidden  ss:hidden xxl:mr-[238px] dark:text-white xxl:h-0 flex-row gap-4  h-[5rem] ">
+        <div className="flex xs:hidden  ss:hidden xxl:mr-[188px] dark:text-white xxl:h-0 flex-row gap-4  h-[5rem] ">
           <a href="https://www.linkedin.com/company/airyy-rides/">
             <CiLinkedin className="cursor-pointer" size={33} />
           </a>

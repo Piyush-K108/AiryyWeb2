@@ -2,6 +2,8 @@
    flex: 1;
     flex-wrap: wrap;
     position: relative;
+    left: 30px ;
+
   
   .phoneSvg {
     @apply stroke-yellow-400;

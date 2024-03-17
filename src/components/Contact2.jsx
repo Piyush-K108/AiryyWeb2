@@ -27,17 +27,17 @@ const Contact = () => {
     <motion.div
       ref={ref}
       id="Contact"
-      className="flex snap-start mt-[9.2rem] flex-row w-full items-start"
+      className="flex snap-start mt-[9.2rem] flex-row w-full items-start "
     >
       <div
         id="Desktop"
-        className="xs:flex xs:flex-col overflow-hidden relative flex   flex-row w-full font-poppins items-start"
+        className="xs:flex  xs:flex-col overflow-hidden relative flex   flex-row w-full font-poppins items-start"
       >
         <div
           id="Ellipse1"
-          className="xs:w-[530px]  xs:ml-[-223px] xs:flex xs:flex-col bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start xs:mt-[-163px] mt-[-92px] xs:mb-[-192px]   mb-[-92px] ml-[-163px] pt-56 xs:pb-[229px] pb-[269px]   pl-48 rounded-[50%]"
+          className="xs:w-[530px]  xs:ml-[-223px] xs:flex xs:flex-col  bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start xs:mt-[-163px] mt-[-92px] xs:mb-[-192px]   mb-[-92px] ml-[-163px] pt-56 xs:pb-[229px] pb-[269px]   pl-48 rounded-[50%]"
         >
-          <div className="xs:justify-start  xs:items-start flex flex-col gap-5 w-3/5 font-poppins items-start mb-1 ml-48 xs:ml-14 xs:w-full">
+          <div className="xs:justify-start  xs:items-start flex flex-col  gap-5 w-3/5 font-poppins items-start mb-1 ml-48 xs:ml-14 xs:w-full">
             <div
               id="GetInTouch"
               className="xs:flex xs:justify-start xs:items-start xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white "
@@ -88,7 +88,7 @@ const Contact = () => {
 
         <div
           id="Ellipse"
-          className="w-3/4  h-[1091px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat absolute top-[-0px] left-[630px] flex flex-col gap-8 items-start pt-60 pb-[476px] px-[337px] rounded-[50%]"
+          className="w-3/4  h-[1091px]  bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat absolute top-[-0px] left-[700px] flex flex-col gap-8 items-start pt-60 pb-[476px] px-[337px] rounded-[50%]"
         />
 
         {/* form */}
@@ -134,27 +134,27 @@ const Contact = () => {
             transition={{ delay: 2.5, duration: 1 }}
           >
             <input
-              className="placeholder-black xs:w-[19rem]"
+              className="placeholder-black  xs:w-[19rem]"
               type="text"
               required
               placeholder="Name"
               name="name"
             />
             <input
-              className="placeholder-black xs:w-[19rem]"
+              className="placeholder-black  xs:w-[19rem]"
               type="email"
               required
               placeholder="Email"
               name="email"
             />
             <textarea
-              className="placeholder-black h-full w-full xs:w-[19rem] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
+              className="placeholder-black  h-full w-full xs:w-[19rem] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
               rows={8}
               placeholder="Message"
               name="message"
             />
             <div className="flex xs:w-72 justify-center items-center">
-              <span className="bg-gray-900 xs:w-72  w-full py-3 rounded-2xl text-center cursor-pointer uppercase text-yellow-400 font-bold">
+              <span className="bg-gray-900 xs:w-72   w-full py-3 rounded-2xl text-center cursor-pointer uppercase text-yellow-400 font-bold">
                 Submit
               </span>
             </div>

@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div
         id="About"
-        className="relative xs:hidden ss:hidden sm:hidden lg:flex lg:justify-between  w-screen p-10 justify-between h-[102vh] flex flex-row items-center"
+        className="relative xs:hidden ss:hidden sm:hidden lg:flex lg:justify-between lg:px-40 xxl:px-40 xl:px-40 w-screen p-10 justify-between h-[102vh] flex flex-row items-center"
       >
         {/* Background */}
 
@@ -47,6 +47,10 @@ const About = () => {
           </div>
         </div>
       </div>
+   
+
+
+     {/* ABOUT US FOR MOBLIE AND SMALL SCREENS  */}
 
       <div
         id="About"
