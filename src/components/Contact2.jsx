@@ -53,7 +53,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="relative z-[1001] xs:h-20  xs:p-3 xs:top-[-60px] xs:left-[50px] left-48">
-            <span className="block font-poppins xs:text-[12px]  sm:text-[18px]  xs:ml-2 dark:text-white font-medium uppercase">
+            <span className="block font-poppins xs:text-[12px] xxl:text-[13px] xxl:mb-4 sm:text-[18px]  xs:ml-2 dark:text-white font-medium uppercase">
               Click on Map to Reach the Pickup location.
             </span>
             <iframe
