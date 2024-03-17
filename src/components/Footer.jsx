@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear();
 function Footer() {
   return (
     <div id="Footer" className="flex flex-col sm:px-10 lg:px-20 xxl:px-10 w-screen px-5">
-      <div className="xxl:mb-[40px]">
+      <div className="xxl:mb-[100px]">
         <a
           className=" cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"
           onClick={() => scrollToSection("Nav")}
@@ -73,14 +73,13 @@ function Footer() {
           </ul>
         </div>
         <div className="xxl:flex xxl:flex-col xxl:items-center ">
-          <div className="sm:hidden ss:hidden  xs:hidden xxl:flex">
+          <div className="sm:hidden ss:hidden  xs:hidden xxl:flex xxl:items-center">
             <Zoom right>
               <img
                 src={FooterImg}
                 alt="Footer Img"
-                className="rounded-2xl -mt-40 "
-                height={500}
-                width={500}
+                className="rounded-2xl -mt-40 xxl:h-[200px] xxl:w-[300px] "
+              
               />
             </Zoom>
           </div>
