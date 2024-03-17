@@ -41,7 +41,7 @@ const App = () => {
           <LapTestimonials />
         </div>
         <div className="mt-20">
-          <Contact2 />
+          <Contact />
         </div>
         <div className="mt-20">
           <Footer />
@@ -62,7 +62,7 @@ const App = () => {
         <div id="MoServices" className="mt-20 sm:mt-[20rem]">
           <Services />
         </div>
-        <div id="MoBikes" className="ss:mt-20 sm:mt-[300px]">
+        <div id="MoBikes" className="mt-0 sm:mt-[300px]">
           <Bikes />
         </div>
         <div id="MoTestimonials" className="mt-20 ss:mt-44">

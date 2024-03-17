@@ -28,9 +28,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-screen p-12  flex  flex-row justify-between ">
+    <div className="w-screen p-12   flex  flex-row justify-between ">
       {/* Logo and Menu Item */}
-      <div className="flex flex-row items-center gap-10">
+      <div className="flex flex-row items-center gap-10 z-[10000]">
         <a
           className="cursor-pointer  outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 "
           aria-label="Resend"

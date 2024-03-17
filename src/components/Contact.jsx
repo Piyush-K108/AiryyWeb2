@@ -24,12 +24,12 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
   return (
-    <motion.div ref={ref} id="Contact" className="flex flex-col w-screen px-5">
+    <motion.div ref={ref} id="Contact" className="flex flex-col lg:flex-row gap-10 w-screen px-5">
       {/* Text */}
-      <div className="flex flex-col justify-center items-center xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white ">
+      <div className="flex flex-col justify-center lg:px-10 items-center lg:justify-start lg:items-start lg:w-[50%] xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white ">
         <p className="mb-4">Get in Touch</p>
         <div className="sm:text-[17px] ss:text-[14px] xs:text-[12px]  xs:flex xs:justify-start xs:items-start text-justify text-xl font-poppins font-medium  dark:text-[#d3d0d0]">
-          <p className="xs:text-center sm:px-10 ss:px-10">
+          <p className="xs:text-center sm:px-10 lg:px-0 ss:px-10">
             Have questions or need assistance? We are here to help. Contact our
             friendly team at AiRYY Rides for any inquiries, support or
             partnership opportunities.
@@ -58,7 +58,7 @@ const Contact = () => {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div className="xs:ml-5 flex dark:text-white flex-row items-center justify-center gap-8 mt-6 ">
+          <div className="xs:ml-5 flex dark:text-white flex-row items-center justify-center lg:items-start lg:justify-start  gap-8 mt-6 ">
             <a href="https://www.linkedin.com/company/airyy-rides/">
               <CiLinkedin className="cursor-pointer xs:text-[30px] text-[35px]" />
             </a>
@@ -75,15 +75,15 @@ const Contact = () => {
       </div>
 
       {/* Form */}
-      <div className="formContainer xs:z-[1000] z-[1000] ">
+      <div className="formContainer flex-1 flex-wrap relative  z-[1000]  lg:w-[50%]">
         <motion.div
-          className="stroke-yellow-400 absolute left-8 -z-1 m-auto mt-10"
+          className="stroke-yellow-400 absolute xs:left-10  sm:left-28 md:left-56  lg:left-20 xxl:left-20 -z-1 mt-10"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{ delay: 2, duration: 1 }}
         >
           <svg
-            className="xs:h-[280px] xs:w-[280px] h-[450px] w-[450px]"
+            className="xs:h-[320px] xs:w-[300px] h-[450px] w-[450px] lg:w-[400px] lg:h-[400px]  xl:w-[420px] xxl:w-[480px] xl:h-[420px] xxl:h-[480px] "
             viewBox="0 0 32.666 32.666"
           >
             <motion.path
@@ -110,27 +110,27 @@ const Contact = () => {
           </svg>
         </motion.div>
         <motion.form
-          className=" mt-10 items-center justify-center xs:w-full xs:flex xs:flex-col"
+          className="mt-10 items-center justify-center xs:w-full xs:flex xs:flex-col relative"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 2.5, duration: 1 }}
         >
           <input
-            className="placeholder-black sm:w-[25rem] ss:w-[20rem] xs:w-[19rem]"
+            className="placeholder-black sm:w-[25rem] ss:w-[20rem] xs:w-[19rem] lg:w-[80%]"
             type="text"
             required
             placeholder="Name"
             name="name"
           />
           <input
-            className="placeholder-black sm:w-[25rem] ss:w-[20rem] xs:w-[19rem]"
+            className="placeholder-black sm:w-[25rem] ss:w-[20rem] xs:w-[19rem] lg:w-[80%]"
             type="email"
             required
             placeholder="Email"
             name="email"
           />
           <textarea
-            className="placeholder-black h-full w-full sm:w-[25rem] ss:w-[20rem] xs:w-[19rem] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
+            className="placeholder-black h-full w-full sm:w-[25rem] ss:w-[20rem] xs:w-[19rem] lg:w-[80%] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
             rows={8}
             placeholder="Message"
             name="message"
