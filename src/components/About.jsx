@@ -16,7 +16,7 @@ const About = () => {
         {/* Text */}
         <div className=" w-[48%] z-10">
           <Fade left>
-            <div className="mt-4 text-justify ml-40">
+            <div className="mt-4 text-justify">
               <div className="text-3xl mb-2 xs:font-poppins ss:font-poppins sm:font-poppins font-poppins font-semibold leading-[86px] dark:text-gray-300">
                 ABOUT US
               </div>

@@ -29,7 +29,7 @@ const Loader = () => {
   }, [loading]);
 
   return (
-    <div className={`loader  ${loading ? "z-[1100]" : "-z-[1000] hidden"}`}>
+    <div className={`loader  ${loading ? "z-[1100] " : "-z-[1000] hidden"}`}>
       <div className="blinder-container ">
         <div className="blinder"></div>
         <div className="blinder2"></div>

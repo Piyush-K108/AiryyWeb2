@@ -15,7 +15,7 @@ const Bikes = () => {
 
     return (
       <div
-        className="relative flex flex-col items-center justify-center bg-gradient-to-r from-yellow-400 to-yellow-300 border border-black shadow-2xl rounded-2xl ss:w-[170px] xs:w-[150px] xs:h-[180px] w-[251px] h-[209px]"
+        className="relative z-[100000] flex flex-col items-center justify-center bg-gradient-to-r from-yellow-400 to-yellow-300 border border-black shadow-2xl rounded-2xl ss:w-[170px] xs:w-[150px] xs:h-[180px] w-[251px] h-[209px]"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -26,14 +26,13 @@ const Bikes = () => {
         />
         <div className="flex flex-col items-center justify-center w-[134px] h-[124px] relative">
           {isHovered ? (
-            <Fade bottom>
-              <div className="text-center items-center justify-center ">
-                
+            <div className="text-center items-center justify-center">
+              <Fade bottom>
                 <p className={`text-justify xs:text-center xs:text-[12px] xs:w-[120px] w-[170px] text-black font-poppins font-semibold ${isHiddenText ? 'hidden' : ''}`}>
                   {description}
                 </p>
-              </div>
-            </Fade>
+              </Fade>
+            </div>
           ) : (
             <div>
               <Fade bottom>

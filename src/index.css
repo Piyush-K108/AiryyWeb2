@@ -14,15 +14,16 @@ body {
   /* height: 100%; */
 
   margin: 0;
-  /* scrollbar-width: thin; */
-  /* scrollbar-color: rgb(234, 179, 8) #2e2e2e; */
-  @apply bg-dimWhite  dark:bg-black   text-black dark:text-white overflow-x-hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(234, 179, 8) #2e2e2e;
+  @apply bg-dimWhite  dark:bg-black  text-black dark:text-white ;
+
 }
 
 
 :root {
   --primarycolor: rgba(95, 111, 82,  1);
-  
+
 }
 
 .slick-slide img {
