@@ -12,10 +12,10 @@ import earth from "../assets/earth.png";
 const Bikes = () => {
   const BikeBox = ({ imgSrc, description, isHiddenText }) => {
     const [isHovered, setIsHovered] = useState(false);
-
+   
     return (
       <div
-        className="relative z-[100000] flex flex-col items-center justify-center bg-gradient-to-r from-yellow-400 to-yellow-300 border border-black shadow-2xl rounded-2xl ss:w-[170px] xs:w-[150px] xs:h-[180px] w-[251px] h-[209px]"
+        className="relative z-[100000] flex flex-col items-center justify-center bg-gradient-to-r from-yellow-400 to-yellow-300 border border-black shadow-2xl rounded-2xl xxl:w-[250px] xxl:h-[200px] ss:w-[170px] sm:w-[190px] sm:h-[180px] xs:w-[150px] xs:h-[180px] w-[251px] h-[209px]"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -26,9 +26,9 @@ const Bikes = () => {
         />
         <div className="flex flex-col items-center justify-center w-[134px] h-[124px] relative">
           {isHovered ? (
-            <div className="text-center items-center justify-center">
+            <div className="text-center sm:text-center items-center  justify-center">
               <Fade bottom>
-                <p className={`text-justify xs:text-center xs:text-[12px] xs:w-[120px] w-[170px] text-black font-poppins font-semibold ${isHiddenText ? 'hidden' : ''}`}>
+                <p className={`text-justify sm:text-center xxl:text-[15px] sm:text-[14px] ss:text-center xxl:w-[180px] sm:w-[120px] ss:w-[140px] ss:text-[14px]  xs:text-center xs:text-[12px] xs:w-[120px] w-[170px] text-black font-poppins font-semibold ${isHiddenText ? 'hidden' : ''}`}>
                   {description}
                 </p>
               </Fade>
@@ -57,7 +57,7 @@ const Bikes = () => {
 
       <div
         id="Bikes"
-        className="grid ss:grid-cols-2 ss:gap-x-10 xs:grid-cols-2 grid-cols-3 lg:gap-x-20 sm:gap-x-10 xl:gap-x-40 gap-y-20 xs:gap-10 xs:m-[5px] py-8"
+        className="grid ss:grid-cols-2  ss:gap-x-10 xs:grid-cols-2 grid-cols-3 lg:gap-x-20 sm:gap-x-10 xl:gap-x-40 gap-y-20 xs:gap-10 xs:m-[5px] py-8"
       >
         <BikeBox imgSrc={Img1} description="Our Electric Bikes boost a 50 km range, ideal for economical short rides." isHiddenText={false} />
         <BikeBox imgSrc={Img2} description="Both Electric Bikes and Activa are new, serviced, and feature advanced safety for a secure riding experience." isHiddenText={false} />

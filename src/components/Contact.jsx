@@ -24,12 +24,12 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
   return (
-    <motion.div ref={ref} id="Contact" className="flex flex-col lg:flex-row gap-10 w-screen px-5">
+    <motion.div ref={ref} id="Contact" className="flex relative flex-col lg:flex-row gap-10 w-screen px-5 mt-10">
       {/* Text */}
-      <div className="flex flex-col justify-center lg:px-10 items-center lg:justify-start lg:items-start lg:w-[50%] xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white ">
+      <div className="flex flex-col justify-center z-[100000] lg:px-10 items-center lg:justify-start lg:items-start lg:w-[50%] xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white ">
         <p className="mb-4">Get in Touch</p>
         <div className="sm:text-[17px] ss:text-[14px] xs:text-[12px]  xs:flex xs:justify-start xs:items-start text-justify text-xl font-poppins font-medium  dark:text-[#d3d0d0]">
-          <p className="xs:text-center sm:px-10 lg:px-0 ss:px-10">
+          <p className="xs:text-center sm:px-10 lg:px-0  ss:px-10">
             Have questions or need assistance? We are here to help. Contact our
             friendly team at AiRYY Rides for any inquiries, support or
             partnership opportunities.
@@ -73,6 +73,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <div
+          id="Ellipse"
+          className="w-[800px] hidden h-[791px]  bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat absolute top-[-90px] xl:left-[490px] img:left-[620px] xxl:left-[750px]      xl:flex flex-col gap-8 items-start pt-60 pb-[476px] px-[337px] rounded-[50%]"
+        />
 
       {/* Form */}
       <div className="formContainer flex-1 flex-wrap relative  z-[1000]  lg:w-[50%]">

@@ -19,7 +19,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 const App = () => {
   return (
-    <div className="bg-black">
+    <div id='App' className="bg-black">
       {/* Big */}
       <div className="flex-col hidden bg-black lg:flex xxl:overflow-hidden">
         <div id='LapNav' className="-mt-4  ">

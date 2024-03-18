@@ -8,14 +8,15 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { BsArrowUp } from "react-icons/bs";
-
-import Logo from "../assets/logo.png";
 import gsap from "gsap";
+import Logo from "../assets/logo.png";
+import Fade from "react-reveal/Fade";
 
 const currentYear = new Date().getFullYear();
 
 function Footer() {
   const [showArrow, setShowArrow] = useState(false);
+  const [Dont, setDont] = useState(false);
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -31,25 +32,25 @@ function Footer() {
 
       if (heroElement) {
         const rect = heroElement.getBoundingClientRect();
+
         if (rect.y > -3740) {
           if (showArrow) {
-            // Fade out animation to top
-            gsap.fromTo(
-              "#FooterArrow",
-              { opacity: 1, y: 0 },
-              { opacity: 0, y: -20, duration: 0.5, ease: "power3.out" }
+            setDont(true);
+            const arrowTimeline = gsap.timeline();
+            arrowTimeline.to("#FooterArrow", {
+              opacity: 0,
+              y: -100,
+              duration: 1,
+              ease: "power3.out",
+            });
+            arrowTimeline.eventCallback("onComplete", () =>
+              setShowArrow(false)
             );
-            setShowArrow(false);
           }
         } else {
           if (!showArrow) {
-            // Fade in animation from bottom
-            gsap.fromTo(
-              "#FooterArrow",
-              { opacity: 0, y: 20 },
-              { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }
-            );
             setShowArrow(true);
+            setDont(false)
           }
         }
       }
@@ -61,6 +62,7 @@ function Footer() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [showArrow]);
+
   return (
     <div
       id="Footer"
@@ -204,22 +206,42 @@ function Footer() {
       </div>
 
       {/* Upper */}
-      <div
-        id="FooterArrow"
-        className={`fixed hidden ${
-          showArrow ? "block" : "hidden"
-        } z-[1001] text-white border bg-yellow-500 rounded-[50%] xxl:flex justify-end items-end h-[3.4rem] w-[3.4rem] cursor-pointer right-0 bottom-10 md:-mr-9 xl:mr-10 bg-transparent`}
-        onClick={() => scrollToSection("LapNav")}
-      >
-        <BsArrowUp
-          style={{ height: "28px", width: "30px" }}
-          className={`animate-icon mr-[0.7rem] mb-3 inset-0 text-white z-10 flex h-full w-full items-center justify-center`}
-        />
-        <span
-          style={{ height: `100%` }}
-          className={`absolute inset-0 border-[3px]  border-t-[45-3px]  rounded-[50%]`}
-        ></span>
-      </div>
+
+      {showArrow && !Dont ? (
+        <Fade up>
+          <div
+            id="FooterArrow"
+            className={`fixed hidden  z-[1001] text-white border bg-yellow-500 rounded-[50%] xxl:flex justify-end items-end h-[3.4rem] w-[3.4rem] cursor-pointer right-0 bottom-10 md:-mr-9 xl:mr-10 bg-transparent`}
+            onClick={() => scrollToSection("LapNav")}
+          >
+            <BsArrowUp
+              style={{ height: "28px", width: "30px" }}
+              className={`animate-icon mr-[0.7rem] mb-3 inset-0 text-white z-10 flex h-full w-full items-center justify-center`}
+            />
+            <span
+              style={{ height: `100%` }}
+              className={`absolute inset-0 border-[3px]  border-t-[45-3px]  rounded-[50%]`}
+            ></span>
+          </div>
+        </Fade>
+      ) : null}
+
+      {Dont && (
+        <div
+          id="FooterArrow"
+          className={`fixed hidden  z-[1001] text-white border bg-yellow-500 rounded-[50%] xxl:flex justify-end items-end h-[3.4rem] w-[3.4rem] cursor-pointer right-0 bottom-10 md:-mr-9 xl:mr-10 bg-transparent`}
+          onClick={() => scrollToSection("LapNav")}
+        >
+          <BsArrowUp
+            style={{ height: "28px", width: "30px" }}
+            className={`animate-icon mr-[0.7rem] mb-3 inset-0 text-white z-10 flex h-full w-full items-center justify-center`}
+          />
+          <span
+            style={{ height: `100%` }}
+            className={`absolute inset-0 border-[3px]  border-t-[45-3px]  rounded-[50%]`}
+          ></span>
+        </div>
+      )}
     </div>
   );
 }
