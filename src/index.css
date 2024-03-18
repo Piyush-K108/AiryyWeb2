@@ -2,27 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+
 html,
 body {
   width: 100%;
   /* height: 100%; */
-  overflow-x: hidden;
+
   margin: 0;
   scrollbar-width: thin;
   scrollbar-color: rgb(234, 179, 8) #2e2e2e;
-  @apply bg-dimWhite  dark:bg-black  text-black dark:text-white ;
+  @apply bg-dimWhite dark: bg-black overflow-x-hidden text-black dark:text-white;
 
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden !important;
+}
 
 :root {
-  --primarycolor: rgba(95, 111, 82,  1);
+  --primarycolor: rgba(95, 111, 82, 1);
 
 }
 
@@ -35,7 +40,7 @@ body {
   height: 100vh;
   width: 100%;
   position: absolute;
-  z-index: 999;
+  z-index: 10000000;
 
   .blinder-container {
     position: absolute;
@@ -43,8 +48,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
-    
+
+
 
     .blinder {
       background-color: #000;
@@ -52,6 +57,7 @@ body {
       width: 100vw;
       transform-origin: top;
     }
+
     .blinder2 {
       background-color: #000;
       height: 50vh;
@@ -59,12 +65,17 @@ body {
       transform-origin: bottom;
     }
   }
-  .svg{
+
+  .svg {
     position: absolute;
     margin: auto;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 7vw;
   }
+
   .video {
     position: absolute;
     margin: auto;
@@ -85,11 +96,12 @@ body {
   0% {
     opacity: 0;
     transform: translateY(-16px);
-}
-100% {
+  }
+
+  100% {
     opacity: 1;
     transform: translateY(0);
-}
+  }
 }
 
 
@@ -98,22 +110,16 @@ body {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(12px);
   }
+
   100% {
     transform: translateY(-2px);
   }
 }
 
 .animate-icon {
-  animation: icon 3.5s  linear infinite alternate-reverse;
+  animation: icon 3.5s linear infinite alternate-reverse;
 }
-
-
-
-
-
-
-
-

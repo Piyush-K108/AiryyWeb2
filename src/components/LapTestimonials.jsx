@@ -119,9 +119,9 @@ const LapTestimonials = () => {
         {/* text */}
 
         <Fade left>
-          <div className="z-10 flex flex-col px-10 h-full w-full mt-16">
+          <div className="z-10 flex flex-col px-16 h-full w-full mt-16">
             <h1 className="font-poppins text-4xl">WHAT OUR RIDERS SAY!</h1>
-            <p className="mt-8 w-[70%]  text-justify font-poppins  lg:text-2xl  ">
+            <p className="mt-8 w-[90%]  text-justify font-poppins  lg:text-2xl  ">
               Don't just take our word for it hear from our satisfied riders who
               have experienced the joy of AiRYY Rides.
             </p>
