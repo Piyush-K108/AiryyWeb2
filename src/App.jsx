@@ -22,7 +22,7 @@ const App = () => {
     <div className="bg-black">
       {/* Big */}
       <div className="flex-col hidden bg-black lg:flex xxl:overflow-hidden">
-        <div className="-mt-4  ">
+        <div id='LapNav' className="-mt-4  ">
           <Navbar />
         </div>
         <div className="">

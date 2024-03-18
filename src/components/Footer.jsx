@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import FooterImg from "../assets/FooterImg6.png";
 import Zoom from "react-reveal/Zoom";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
@@ -7,14 +7,65 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
+import { BsArrowUp } from "react-icons/bs";
 
 import Logo from "../assets/logo.png";
+import gsap from "gsap";
 
 const currentYear = new Date().getFullYear();
 
 function Footer() {
+  const [showArrow, setShowArrow] = useState(false);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroElement = document.getElementById("LapNav");
+
+      if (heroElement) {
+        const rect = heroElement.getBoundingClientRect();
+        if (rect.y > -3740) {
+          if (showArrow) {
+            // Fade out animation to top
+            gsap.fromTo(
+              "#FooterArrow",
+              { opacity: 1, y: 0 },
+              { opacity: 0, y: -20, duration: 0.5, ease: "power3.out" }
+            );
+            setShowArrow(false);
+          }
+        } else {
+          if (!showArrow) {
+            // Fade in animation from bottom
+            gsap.fromTo(
+              "#FooterArrow",
+              { opacity: 0, y: 20 },
+              { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }
+            );
+            setShowArrow(true);
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [showArrow]);
   return (
-    <div id="Footer" className="flex flex-col w-screen px-5 md:px-20 xxl:pr-56 xxl:ml-10">
+    <div
+      id="Footer"
+      className=" relative flex flex-col w-screen px-5 md:px-20 xxl:pr-56 xxl:ml-10"
+    >
       <div className="flex flex-col sm:flex-row sm:justify-between sm:w-screen sm:pr-8 sm:mt-10 ">
         <div className=" z-[100] sm:w-80 sm:-mt-6 xxl:mt-8">
           <a
@@ -31,10 +82,10 @@ function Footer() {
             Rent it now!
           </h2>
           <div className="w-[80vw] ss:w-[220px] md:w-[290px] lg:w-[100vw] xs:flex xs:justify-start xs:items-center">
-              <p className="dark:text-gray-300 ss:text-[20px]    font-poppins mt-1 xs:hidden ss:hidden xs:text-[18px] text-[25px]">
-                Explore the city with ease. Rent a bike today!
-              </p>
-            </div>
+            <p className="dark:text-gray-300 ss:text-[20px]    font-poppins mt-1 xs:hidden ss:hidden xs:text-[18px] text-[25px]">
+              Explore the city with ease. Rent a bike today!
+            </p>
+          </div>
         </div>
 
         <div className="">
@@ -50,10 +101,7 @@ function Footer() {
         </div>
       </div>
 
-
-
       <div className="flex flex-col -mt-10 ss:-mt-20 sm:mt-1">
-
         <div className="flex md:flex-row justify-between">
           <div className="flex flex-col sm:w-[60%]">
             <h1 className="font-bold font-poppins pb-2   ss:text-[18px] xs:text-[18px] text-[25px] border-yellow-200">
@@ -127,8 +175,6 @@ function Footer() {
         </div>
       </div>
 
-
-
       {/* lower */}
       <div className="w-screen  justify-between flex xs:hidden   ss:hidden pr-10  mt-10 text-white">
         <p>
@@ -155,6 +201,24 @@ function Footer() {
           airyyrides.com
         </p>
         {/* Social Links for larger screens */}
+      </div>
+
+      {/* Upper */}
+      <div
+        id="FooterArrow"
+        className={`fixed hidden ${
+          showArrow ? "block" : "hidden"
+        } z-[1001] text-white border bg-yellow-500 rounded-[50%] xxl:flex justify-end items-end h-[3.4rem] w-[3.4rem] cursor-pointer right-0 bottom-10 md:-mr-9 xl:mr-10 bg-transparent`}
+        onClick={() => scrollToSection("LapNav")}
+      >
+        <BsArrowUp
+          style={{ height: "28px", width: "30px" }}
+          className={`animate-icon mr-[0.7rem] mb-3 inset-0 text-white z-10 flex h-full w-full items-center justify-center`}
+        />
+        <span
+          style={{ height: `100%` }}
+          className={`absolute inset-0 border-[3px]  border-t-[45-3px]  rounded-[50%]`}
+        ></span>
       </div>
     </div>
   );

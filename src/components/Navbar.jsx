@@ -10,6 +10,7 @@ const currentYear = new Date().getFullYear();
 const Navbar = () => {
   const [isDropDown, setIsDropDown] = useState(false);
   const dropdownRef = useRef();
+  
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
