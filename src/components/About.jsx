@@ -10,11 +10,11 @@ const About = () => {
       >
         {/* Background */}
 
-        <div className="absolute  left-0 top-0 w-[60%] h-[870px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] opacity-60 bg-cover bg-50%_50% bg-blend-normal bg-no-repeat rounded-[50%]" />
-        <div className="absolute  w-[80%] lg:h-[800px] h-[1017px] bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat left-[48%] flex flex-row justify-end items-start pt-[153px] px-12 rounded-[50%]" />
+        <div className="absolute  lg:h-[600px] xxl:h-[870px] xl:h-[700px] left-0 top-0 w-[60%] h-[870px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] opacity-60 bg-cover bg-50%_50% bg-blend-normal bg-no-repeat rounded-[50%]" />
+        <div className="absolute  w-[80%] xxl:h-[1017px] lg:h-[800px] xl:h-[700px]  h-[1017px] bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat left-[48%] flex flex-row justify-end items-start pt-[153px] px-12 rounded-[50%]" />
 
         {/* Text */}
-        <div className=" w-[48%] z-10">
+        <div className="lg:relative lg:right-20 xxl:top-0 xxl:right-0 lg:top-[-100px] w-[48%] z-10">
           <Fade left>
             <div className="mt-4 text-justify">
               <div className="text-3xl mb-2 xs:font-poppins ss:font-poppins sm:font-poppins font-poppins font-semibold leading-[86px] dark:text-gray-300">
@@ -35,11 +35,11 @@ const About = () => {
         </div>
 
         {/* Image */}
-        <div className="relative w-[50%]">
+        <div className="lg:relative lg:left-[100px] xxl:top-0 xxl:left-0 lg:top-[-120px] w-[50%]">
           <div className="">
             <Fade right>
               <img
-                className=""
+                className="lg:w-[800px] lg:h-[300px] xxl:w-[100%] xxl:h-auto"
                 src="https://file.rendit.io/n/rH5LwF78dqiwZ10YKfVp.png"
                 alt="Vecteezypeopleworkingandmeetingillustration"
               />
@@ -47,10 +47,8 @@ const About = () => {
           </div>
         </div>
       </div>
-   
 
-
-     {/* ABOUT US FOR MOBLIE AND SMALL SCREENS  */}
+      {/* ABOUT US FOR MOBLIE AND SMALL SCREENS  */}
 
       <div
         id="About"
