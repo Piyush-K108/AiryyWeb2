@@ -22,7 +22,7 @@ const Hero = () => {
       {/* Text */}
       <div className="flex flex-col mb-20 ">
         <div className="md:text-3xl  ">
-          <div className="xs:text-[40px]       text-yellow-500  text-[54px] font-medium font-poppins uppercase tracking-[6.48px] xs:mb-8 mb-10">
+          <div className="xs:text-[40px]     text-yellow-500  text-[54px] font-medium font-poppins uppercase tracking-[6.48px] xs:mb-8 mb-10">
             A<span className="lowercase">i</span>RYY Rides
           </div>
           <div className="text-xl dark:text-white  text-[37px] font-medium mb-4 font-poppins uppercase tracking-[4.44px]">

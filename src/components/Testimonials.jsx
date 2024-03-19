@@ -111,11 +111,11 @@ const Testimonials = () => {
 
         <Fade left>
           <div className="z-10 xs:px-8 xs:mt-10   flex flex-col w-screen items-center justify-center">
-            <span className="text-[20px] sm:text-[40px] ss:text-[34px] xs:text-[24px]  font-poppins  ">
+            <span className="text-[20px] text-white sm:text-[40px] ss:text-[34px] xs:text-[24px]  font-poppins  ">
               WHAT OUR RIDERS SAY!
             </span>
             <div className="sm:text-5xl lg:text-2xl">
-              <p className="mt-8 sm:px-10  ss:px-10  ss:leading-7 xs:mt-2 xs:mr-0 ss:text-[20px] xs:text-[14px] xs:leading-7 xs:text-justify   sm:text-[18px] xl:text-[24px]  font-poppins  leading-9  text-center mr-2">
+              <p className="mt-8 sm:px-10 text-white  ss:px-10  ss:leading-7 xs:mt-2 xs:mr-0 ss:text-[20px] xs:text-[14px] xs:leading-7 xs:text-justify   sm:text-[18px] xl:text-[24px]  font-poppins  leading-9  text-center mr-2">
                 Don't just take our word for it hear from our satisfied riders
                 who have experienced the joy of AiRYY Rides.
               </p>
