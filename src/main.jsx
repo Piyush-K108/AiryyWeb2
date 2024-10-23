@@ -7,7 +7,7 @@ import Loader from './Loader.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Loader/>
+  
     <Theme/>
     <App />
   </React.StrictMode>,

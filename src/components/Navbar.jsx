@@ -68,7 +68,7 @@ const Navbar = () => {
             <li>
               <a
                 className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-xl font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
-                onClick={() => scrollToSection("Bikes")}
+                onClick={() => scrollToSection("LapBikes")}
               >
                 Benefits
               </a>
@@ -76,7 +76,7 @@ const Navbar = () => {
             <li>
               <a
                 className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-xl font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
-                onClick={() => scrollToSection("Testimonials")}
+                onClick={() => scrollToSection("LapTest")}
               >
                 Testimonials
               </a>

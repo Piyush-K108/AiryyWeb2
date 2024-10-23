@@ -34,10 +34,10 @@ const App = () => {
         <div className="mt-20">
           <Services />
         </div>
-        <div className="ss:mt-20 sm:mt-[300px] xxl:mt-[-100px]">
+        <div id='LapBikes' className="ss:mt-20 sm:mt-[300px] xxl:mt-[-100px]">
           <Bikes />
         </div>
-        <div className="mt-20 ss:mt-44">
+        <div id="LapTest" className="mt-20 ss:mt-44">
           <LapTestimonials />
         </div>
         <div className="mt-20">
