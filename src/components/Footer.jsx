@@ -116,7 +116,7 @@ function Footer() {
               </li>
               <li className="dark:text-white">
                 <AttachEmailOutlinedIcon className="text-yellow-400" />{" "}
-                <a href="mailto:airyyrides@gmail.com">airyyrides@gmail.com</a>
+                <a href="mailto:hello@airyyrides.com">hello@airyyrides.com</a>
               </li>
               <li className="dark:text-white">
                 <div className="flex flex-row gap-1">
